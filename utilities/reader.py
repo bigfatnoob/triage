@@ -102,7 +102,7 @@ def consolidate():
     description_chain = short_desc[bug_id]
     descriptions = None
     if description_chain:
-      descriptions = [to_utf(d_chain["what"]) for d_chain in description_chain]
+      descriptions = [d_chain["what"] for d_chain in description_chain]
     bug["descriptions"] = descriptions
     # Versions
     version_chain = version[bug_id]
